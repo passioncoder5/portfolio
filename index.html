@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ethical hacker portfolio showcasing penetration testing, vulnerability assessments, and security projects.">
+    <meta name="keywords" content="ethical hacker, penetration testing, cybersecurity, security projects"> 
+
+    <title>Your Name - Ethical Hacker Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Custom styles for dark theme */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #212529; /* Dark background */
+            color: white; /* Light text */
+        }
+
+        .navbar {
+            background-color: #343a40; /* Darker navbar */
+        }
+
+        .hero-section {
+            height: 100vh;
+            background-image: url('images/hero.jpg'); /* Adjust to your image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .profile-img {
+            position: absolute;
+            top: 20px; /* Adjust position as needed */
+            left: 20px; /* Adjust position as needed */
+            width: 100px; /* Profile image size */
+            height: 100px; /* Profile image size */
+            border-radius: 50%; /* Circular image */
+            border: 2px solid white; /* Border for emphasis */
+        }
+
+        .portfolio .card {
+            position:fixed;
+            height: 100%;
+            background-color: #343a40; /* Dark background for cards */
+            color: white; /* Light text for cards */
+        }
+
+        footer {
+            background-color: #343a40; /* Dark footer */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-text {
+            color: #ffffff; /* White footer text */
+        }
+
+        /* Style for sections */
+        h2 {
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+        }
+
+        /* Fade effect */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Aravinda A Kumar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a> <!-- Link to home section -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a> <!-- Link to about section -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a> <!-- Link to portfolio section -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a> <!-- Link to skills section -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a> <!-- Link to certifications section -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a> <!-- Link to contact section -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <img src="images/profile_image.jpeg" alt="Aravinda A Kumar" class="profile-img"> <!-- Add your profile image here -->
+        <div class="hero-text fade-in">
+            <h1>Welcome to My Portfolio!</h1>
+            <p>This is Aravinda A Kumar</p>
+            <a href="#portfolio" class="btn btn-primary btn-lg">View My Work</a>
+        </div>
+    </section>
+    <br>
+    <!-- About Section -->
+    <section id="about" class="py-5 fade-in" style="position:relative;">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a certified ethical hacker with expertise in identifying and mitigating security vulnerabilities. My passion for cybersecurity drives me to constantly stay ahead of emerging threats by honing my skills in penetration testing, network security, and ethical hacking methodologies.</p>
+            <p>With a strong background in both offensive and defensive security, I help organizations safeguard their digital assets by providing comprehensive security assessments.</p>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 fade-in" style="position:relative;">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1: Web Application Penetration Testing</h5>
+                            <p class="card-text">Conducted a full security assessment of a web application on portswigger labs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2:Penetration Testing</h5>
+                            <p class="card-text">Solved CEH engage platform pentesting (CTF)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3: Built a Newsportal</h5>
+                            <p class="card-text">Full stack CRUD application</p>
+                            <a href="https://github.com/passioncoder5/newsportal" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="images/project4.jpg" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 4: Built weather bot using python tkinter</h5>
+                            <p class="card-text">A Python tkinter project displaying weather updates using API</p>
+                            <a href="https://github.com/passioncoder5/weather_bot" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 fade-in" style="position:relative;">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python,Bash Scripting,Java,Networking concepts</li>
+                <li>Penetration Testing</li>
+                <li>Vulnerability Assessment</li>
+                <li>Network Security Testing</li>
+                <li>Web Application Security Testing</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5 fade-in" style="position:relative;">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Certified Ethical Hacker (CEH) v12</li>
+                <li>Google Cybersecurity Certificate</li>
+                <li>Enhancing soft skill and personality(NPTEL)</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 fade-in" style="position:relative;">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: aru510704@gmail.com</p> <!-- Add your email address -->
+         <!-- Add your phone number -->
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-text">© 2024 Aravinda A Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Smooth scroll logic
+        const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+        // Collapse the navbar when a link is clicked and smooth scroll
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent the default anchor click behavior
+                const navbarHeight = 500;
+                const targetId = link.getAttribute('href'); // Get the target section ID
+                const targetSection = document.querySelector(targetId); // Select the target section
+                
+                // Scroll to the target section, adjusting for the navbar height
+                window.scrollTo({
+                    top: targetSection.offsetTop - navbarHeight, // Adjusting for the navbar height
+                    behavior: 'smooth' // Smooth scroll
+                });
+
+                // Collapse the navbar if it is open
+                const navbarNav = document.getElementById('navbarNav');
+                const navbarToggle = document.querySelector('.navbar-toggler');
+
+                if (navbarNav.classList.contains('show')) {
+                    navbarToggle.click(); // Trigger the click event to collapse
+                }
+            });
+        });
+
+        // Fade-in effect for sections
+        const fadeInSections = document.querySelectorAll('.fade-in');
+        const options = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        fadeInSections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
