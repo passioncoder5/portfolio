@@ -10,12 +10,51 @@
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <style>
+     .section {
+    background-color: hsla(0, 0%, 0%, 0); /* Fully transparent */
+}
+
+
+    .navbar a, .card a, .footer a {
+    text-decoration: none;
+    }
+
+    a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    }
+    .no-underline {
+    text-decoration: none;
+    }
+
+    #starBackground {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    }
+
+    /* Adjust existing styles for better visibility with the star background */
+    .navbar {
+        background-color: rgba(52, 58, 64, 0.8); /* Semi-transparent navbar */
+    }
+
+    .card {
+        background-color: rgba(52, 58, 64, 0.9); /* Semi-transparent cards */
+        backdrop-filter: blur(5px);
+    }
+
+    section {
+        background-color: rgba(33, 37, 41, 0.7); /* Semi-transparent sections */
+        backdrop-filter: blur(3px);
+    }
         /* Custom styles for dark theme */
         body {
-            font-family: 'Merriweather', sans-serif;
-            background-color: #212529; /* Dark background */
+            font-family: 'Merriweather', sans-serif;/* Dark background */
             color: white; /* Light text */
         }
 
@@ -48,8 +87,7 @@
 
         .portfolio .card {
             position:fixed;
-            height: 100%;
-            background-color: #343a40; /* Dark background for cards */
+            height: 100%;/* Dark background for cards */
             color: white; /* Light text for cards */
         }
 
@@ -90,11 +128,12 @@
     </style>
 </head>
 <body>
-
+    <!-- Add this canvas element right after the opening <body> tag -->
+    <canvas id="starBackground"></canvas>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Aravinda A Kumar</a>
+            <a class="navbar-brand .no-underline" style="text-decoration: none" href="#">Aravinda A Kumar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -102,25 +141,25 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a> <!-- Link to home section -->
+                        <a class="nav-link" style="text-decoration: none" href="#home">Home</a> <!-- Link to home section -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a> <!-- Link to about section -->
+                        <a class="nav-link" style="text-decoration: none" href="#about">About</a> <!-- Link to about section -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a> <!-- Link to portfolio section -->
+                        <a class="nav-link" style="text-decoration: none" href="#portfolio">Portfolio</a> <!-- Link to portfolio section -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a> <!-- Link to skills section -->
+                        <a class="nav-link" style="text-decoration: none" href="#skills">Skills</a> <!-- Link to skills section -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#certifications">Certifications</a> <!-- Link to certifications section -->
+                        <a class="nav-link" style="text-decoration: none" href="#certifications">Certifications</a> <!-- Link to certifications section -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a> <!-- Link to certifications section -->
+                        <a class="nav-link" style="text-decoration: none" href="#resume">Resume</a> <!-- Link to certifications section -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a> <!-- Link to contact section -->
+                        <a class="nav-link" style="text-decoration: none" href="#contact">Contact</a> <!-- Link to contact section -->
                     </li>
                 </ul>
             </div>
@@ -128,30 +167,29 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section"  style="background-color: rgba(0, 0, 0, 0);">
         <img src="images/profile_image.jpeg" alt="Aravinda A Kumar" class="profile-img"> <!-- Add your profile image here -->
-        <div class="hero-text fade-in">
-            <h1>Welcome to My Portfolio!</h1>
-            <p>This is Aravinda A Kumar</p>
-            <a href="#portfolio" class="btn btn-primary btn-lg">View My Work</a>
+        <div class="hero-text">
+            <h1 class="fade-in">Welcome to My Portfolio!</h1>
+            <p class="fade-in">This is Aravinda A Kumar</p>
+            <a href="#portfolio" style="text-decoration: none" class="btn btn-primary btn-lg fade-in">View My Work</a>
         </div>
     </section>
-    <br>
     <!-- About Section -->
-    <section id="about" class="py-5 fade-in" style="position:relative;">
+    <section id="about" class="py-5" style="position:relative; background-color: rgba(0, 0, 0, 0);">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a certified ethical hacker master with expertise in identifying and mitigating security vulnerabilities. My passion for cybersecurity drives me to constantly stay ahead of emerging threats by honing my skills in penetration testing, network security, and ethical hacking methodologies.</p>
-            <p>With a strong background in both offensive and defensive security, I help organizations safeguard their digital assets by providing comprehensive security assessments.</p>
+            <h2 class="fade-in">About Me</h2>
+            <p class="fade-in">I am a certified ethical hacker master with expertise in identifying and mitigating security vulnerabilities. My passion for cybersecurity drives me to constantly stay ahead of emerging threats by honing my skills in penetration testing, network security, and ethical hacking methodologies.</p>
+            <p class="fade-in">With a strong background in both offensive and defensive security, I help organizations safeguard their digital assets by providing comprehensive security assessments.</p>
         </div>
     </section>
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5 fade-in" style="position:relative;">
+    <section id="portfolio" class="py-5" style="position:relative;background-color: rgba(0, 0, 0, 0);">
         <div class="container">
             <h2>Portfolio</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100" style="background-color: #ffffff;">
                         <div class="card-body">
                             <h5 class="card-title">Project 1: Web Application Penetration Testing</h5>
                             <p class="card-text">Conducted a full security assessment of a web application on portswigger labs.</p>
@@ -159,7 +197,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100" style="background-color: #ffffff;">
                         <div class="card-body">
                             <h5 class="card-title">Project 2:Penetration Testing</h5>
                             <p class="card-text">Solved CEH engage platform pentesting (CTF)</p>
@@ -167,20 +205,20 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100" style="background-color: #ffffff;">
                         <div class="card-body">
                             <h5 class="card-title">Project 3: Built a Newsportal</h5>
                             <p class="card-text">Full stack web application using html,css,javascript</p><br>
-                            <p class="card-footer"><a href="https://github.com/passioncoder5/newsportal" target="blank" class="btn btn-primary d-block mx-auto">View Project</a></p>
+                            <p class="card-footer"><a href="https://github.com/passioncoder5/newsportal" style="text-decoration: none" target="blank" class="btn btn-primary d-block mx-auto">View Project</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100" style="background-color: #ffffff;">
                         <div class="card-body">
                             <h5 class="card-title">Project 4: Built weather bot using python tkinter</h5>
                             <p class="card-text">A Python tkinter project displaying weather updates using API</p><br>
-                            <p class="card-footer"><a href="https://github.com/passioncoder5/weather_bot" target="blank" class="btn btn-primary d-block mx-auto">View Project</a></p>
+                            <p class="card-footer"><a href="https://github.com/passioncoder5/weather_bot" style="text-decoration: none" target="blank" class="btn btn-primary d-block mx-auto">View Project</a></p>
                         </div>
                     </div>
                 </div>
@@ -188,7 +226,7 @@
         </div>
     </section>
     <!-- Skills Section -->
-    <section id="skills" class="py-5 fade-in" style="position:relative;">
+    <section id="skills" class="py-5" style="position:relative;background-color: rgba(0, 0, 0, 0);">
         <div class="container">
             <h2>Skills</h2>
             <ul>
@@ -201,7 +239,7 @@
         </div>
     </section>
     <!-- Certifications Section -->
-    <section id="certifications" class="py-5 fade-in" style="position:relative;">
+    <section id="certifications" class="py-5" style="position:relative;background-color: rgba(0, 0, 0, 0);">
         <div class="container">
             <h2>Certifications</h2>
             <ul>
@@ -213,18 +251,18 @@
         </div>
     </section>
     <!-- Resume/CV Section -->
-    <section id="resume" class="py-5 fade-in" style="position:relative;">
+    <section id="resume" class="py-5" style="position:relative;background-color: rgba(0, 0, 0, 0);">
         <div class="container">
             <h2>Resume</h2>
-            <p>Resume: <a href="https://drive.google.com/drive/folders/1op2RdvpDlh1Iq12-xehIhk_veVaB-ePa?usp=drive_link" target="blank" style="color:teal;">Aravinda-Resume-Drive-Link</a></p>
+            <p>Resume: <a href="https://drive.google.com/drive/folders/1op2RdvpDlh1Iq12-xehIhk_veVaB-ePa?usp=drive_link" style="text-decoration: none" target="blank" style="color:teal;">Aravinda-Resume-Drive-Link</a></p>
         </div>
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="py-5 fade-in" style="position:relative;">
+    <section id="contact" class="py-5" style="position:relative;background-color: rgba(0, 0, 0, 0);">
         <div class="container">
             <h2>Contact Me</h2>
             <p>Email: aru510704@gmail.com</p> 
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/aravinda-a-kumar-a82b96276" target="blank" style="color:teal;">Aravinda-LinkedIn-Profile</a></p><!-- Add your email address -->
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aravinda-a-kumar-a82b96276" style="text-decoration: none" target="blank" style="color:teal;">Aravinda-LinkedIn-Profile</a></p><!-- Add your email address -->
          <!-- Add your phone number -->
         </div>
     </section>
@@ -287,5 +325,195 @@
             observer.observe(section);
         });
     </script>
+    <!-- Add this script before the closing </body> tag -->
+<script>
+    const canvas = document.getElementById('starBackground');
+    const ctx = canvas.getContext('2d');
+    
+    // Set canvas size
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    
+    // Initial resize
+    resizeCanvas();
+    
+    // Resize canvas when window is resized
+    window.addEventListener('resize', resizeCanvas);
+    
+    // Star class
+    class Star {
+        constructor() {
+            this.reset();
+        }
+    
+        reset() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.z = Math.random() * 1500; // Star depth
+            this.size = 1;
+            this.speed = Math.random() * 3 + 1;
+            this.brightness = Math.random();
+        }
+    
+        update() {
+            this.z -= this.speed;
+            
+            if (this.z <= 0) {
+                this.reset();
+            }
+    
+            // Calculate star position and size based on perspective
+            this.screenX = (this.x - canvas.width/2) * (600/this.z) + canvas.width/2;
+            this.screenY = (this.y - canvas.height/2) * (600/this.z) + canvas.height/2;
+            this.screenSize = Math.max(0.5, (600/this.z) * this.size);
+        }
+    
+        draw() {
+            const alpha = Math.min(1, this.brightness * (1000/this.z));
+            ctx.beginPath();
+            ctx.arc(this.screenX, this.screenY, this.screenSize, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+            ctx.fill();
+    
+            // Add glow effect for brighter stars
+            if (this.screenSize > 1) {
+                ctx.beginPath();
+                ctx.arc(this.screenX, this.screenY, this.screenSize * 2, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 255, 255, ${alpha * 0.1})`;
+                ctx.fill();
+            }
+        }
+    }
+    
+    // Create stars
+    const stars = Array(500).fill().map(() => new Star());
+    
+    // Big static stars in the background
+    const bigStars = Array(50).fill().map(() => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        size: Math.random() * 2 + 1,
+        twinkleSpeed: Math.random() * 0.1,
+        brightness: Math.random()
+    }));
+    
+    // Animation loop
+    function animate() {
+        // Clear canvas
+        ctx.fillStyle = 'rgba(15, 12, 41, 0.2)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+        // Draw big background stars
+        bigStars.forEach(star => {
+            star.brightness += star.twinkleSpeed;
+            if (star.brightness > 1 || star.brightness < 0) star.twinkleSpeed *= -1;
+            
+            ctx.beginPath();
+            ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255, 255, 255, ${0.5 + star.brightness * 0.5})`;
+            ctx.fill();
+    
+            // Star glow
+            ctx.beginPath();
+            ctx.arc(star.x, star.y, star.size * 3, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255, 255, 255, ${0.1 + star.brightness * 0.1})`;
+            ctx.fill();
+        });
+    
+        // Update and draw moving stars
+        stars.forEach(star => {
+            star.update();
+            star.draw();
+        });
+    
+        // Occasional shooting star
+        if (Math.random() < 0.01) {
+            createShootingStar();
+        }
+    
+        requestAnimationFrame(animate);
+    }
+    
+    // Shooting star effect
+    function createShootingStar() {
+        const shootingStar = {
+            x: Math.random() * canvas.width,
+            y: 0,
+            length: Math.random() * 80 + 100,
+            speed: Math.random() * 15 + 10,
+            angle: Math.PI / 4
+        };
+    
+        function drawShootingStar() {
+            ctx.beginPath();
+            ctx.moveTo(shootingStar.x, shootingStar.y);
+            const endX = shootingStar.x + Math.cos(shootingStar.angle) * shootingStar.length;
+            const endY = shootingStar.y + Math.sin(shootingStar.angle) * shootingStar.length;
+            ctx.lineTo(endX, endY);
+    
+            const gradient = ctx.createLinearGradient(
+                shootingStar.x, shootingStar.y,
+                endX, endY
+            );
+            gradient.addColorStop(0, 'rgba(255, 255, 255, 0.8)');
+            gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+    
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth = 2;
+            ctx.stroke();
+    
+            shootingStar.x += Math.cos(shootingStar.angle) * shootingStar.speed;
+            shootingStar.y += Math.sin(shootingStar.angle) * shootingStar.speed;
+    
+            if (shootingStar.y < canvas.height && shootingStar.x < canvas.width) {
+                requestAnimationFrame(drawShootingStar);
+            }
+        }
+    
+        drawShootingStar();
+    }
+    
+    // Mouse interaction
+    let mouseX = 0;
+    let mouseY = 0;
+    
+    canvas.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    
+        // Create small particles around mouse
+        if (Math.random() < 0.1) {
+            const particle = new Star();
+            particle.x = mouseX;
+            particle.y = mouseY;
+            particle.z = 1500;
+            stars.push(particle);
+            if (stars.length > 600) stars.shift();
+        }
+    });
+    
+    // Start animation
+    animate();
+    
+    // Optional: Add parallax effect
+    document.addEventListener('mousemove', (e) => {
+        const moveX = (e.clientX - window.innerWidth/2) * 0.01;
+        const moveY = (e.clientY - window.innerHeight/2) * 0.01;
+        
+        bigStars.forEach(star => {
+            star.x += moveX * (star.size/2);
+            star.y += moveY * (star.size/2);
+            
+            // Keep stars within bounds
+            if (star.x < 0) star.x = canvas.width;
+            if (star.x > canvas.width) star.x = 0;
+            if (star.y < 0) star.y = canvas.height;
+            if (star.y > canvas.height) star.y = 0;
+        });
+    });
+    </script>
+    
 </body>
 </html>
