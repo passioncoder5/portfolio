@@ -1,519 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ethical hacker portfolio showcasing penetration testing, vulnerability assessments, and security projects.">
-    <meta name="keywords" content="ethical hacker, penetration testing, cybersecurity, security projects"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Aravinda's cybersecurity portfolio" />
+  <meta name="keywords" content="ethical hacker, cybersecurity, penetration testing, portfolio" />
+  <title>Aravinda A Kumar | Ethical Hacker</title>
 
-    <title>Aravinda-portfolio</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <style>
-     .section {
-    background-color: hsla(0, 0%, 0%, 0); /* Fully transparent */
-}
-
-
-    .navbar a, .card a, .footer a {
-    text-decoration: none;
+  <style>
+    a, a:link, a:visited, a:hover, a:active, a:focus,
+    .nav-link, .navbar-brand, .btn, .btn * {
+      text-decoration: none !important;
+      outline: none !important;
     }
 
-    a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    }
-    .no-underline {
-    text-decoration: none;
+    a, a:visited, .nav-link {
+      color: #ffffff !important;
     }
 
-    #starBackground {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    #resume a, #contact a {
+      color: #000000 !important;
     }
 
-    /* Adjust existing styles for better visibility with the star background */
-    .navbar {
-        background-color: rgba(52, 58, 64, 0.8); /* Semi-transparent navbar */
+    .navbar, footer {
+      background-color: #666666 !important;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem !important;
     }
 
     .card {
-        background-color: rgba(52, 58, 64, 0.9); /* Semi-transparent cards */
-        backdrop-filter: blur(5px);
+      background-color: #ffffff !important;
+      color: #000000 !important;
+      border: none !important;
+      border-radius: 10px !important;
+      padding: 40px !important;
+      margin-bottom: 40px !important;
+    }
+
+    #portfolio .card .card {
+      background-color: #d0d0d0 !important;
+      color: #000000 !important;
+    }
+
+    .card a.btn {
+      background-color: #000000 !important;
+      color: #ffffff !important;
+      border: 1px solid #000000 !important;
+    }
+
+    .card a.btn:hover {
+      background-color: #333333 !important;
+      color: #ffffff !important;
+    }
+
+    body {
+      background-color: #1a1a1a !important;
+      color: #ffffff !important;
+      font-family: Calibri, sans-serif !important;
+    }
+
+    .profile-img {
+      width: 120px !important;
+      height: 120px !important;
+      border-radius: 50% !important;
+      border: 3px solid #66d2cf !important;
+      margin-bottom: 20px !important;
+    }
+
+    .icon-link img {
+      width: 32px !important;
+      vertical-align: middle !important;
+      margin-right: 10px !important;
+    }
+
+    h1 {
+      font-size: 2.5rem !important;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2.25rem !important;
+      border-bottom: 2px solid #66d2cf !important;
+      padding-bottom: 10px !important;
+      margin-bottom: 30px !important;
     }
 
     section {
-        background-color: rgba(33, 37, 41, 0.7); /* Semi-transparent sections */
-        backdrop-filter: blur(3px);
+      padding: 0 !important;
     }
-        /* Custom styles for dark theme */
-        body {
-            font-family: 'Merriweather', sans-serif;/* Dark background */
-            color: white; /* Light text */
-        }
-
-        .navbar {
-            background-color: #343a40; /* Darker navbar */
-        }
-
-        .hero-section {
-            height: 100vh;
-            background-image: url('images/hero.jpg'); /* Adjust to your image */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-
-        .profile-img {
-            position: absolute;
-            top: 20px; /* Adjust position as needed */
-            left: 20px; /* Adjust position as needed */
-            width: 100px; /* Profile image size */
-            height: 100px; /* Profile image size */
-            border-radius: 50%; /* Circular image */
-            border: 2px solid white; /* Border for emphasis */
-        }
-
-        .portfolio .card {
-            position:fixed;
-            height: 100%;/* Dark background for cards */
-            color: white; /* Light text for cards */
-        }
-
-        footer {
-            background-color: #343a40; /* Dark footer */
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .footer-text {
-            color: #ffffff; /* White footer text */
-        }
-
-        /* Style for sections */
-        h2 {
-            border-bottom: 2px solid #ffffff;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: none; /* Remove bullet points */
-            padding: 0; /* Remove default padding */
-        }
-
-        /* Fade effect */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-    </style>
+  </style>
 </head>
+
 <body>
-    <!-- Add this canvas element right after the opening <body> tag -->
-    <canvas id="starBackground"></canvas>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand .no-underline" style="text-decoration: none" href="#">Aravinda A Kumar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" style="text-decoration: none" href="#home">Home</a> <!-- Link to home section -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="text-decoration: none" href="#about">About</a> <!-- Link to about section -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="text-decoration: none" href="#portfolio">Portfolio</a> <!-- Link to portfolio section -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="text-decoration: none" href="#skills">Skills</a> <!-- Link to skills section -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="text-decoration: none" href="#certifications">Certifications</a> <!-- Link to certifications section -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="text-decoration: none" href="#resume">Resume</a> <!-- Link to certifications section -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="text-decoration: none" href="#contact">Contact</a> <!-- Link to contact section -->
-                    </li>
-                </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Aravinda A Kumar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="container">
+      <div class="card text-center">
+        <img src="images/profile_image.jpeg" alt="Aravinda A Kumar" class="profile-img" />
+        <h1>Welcome to My Portfolio!</h1>
+        <p>I'm Aravinda A Kumar – Ethical Hacker & Security Specialist</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="card">
+        <h2>About Me</h2>
+        <p style="text-align: justify;">
+        I am an <strong>OSCP</strong> and <strong>OSCP+</strong> certified professional with additional CEH credentials, combining formal training with practical offensive security expertise. With one year of experience as a software developer, I bring a strong technical foundation that complements my understanding of real-world attack surfaces. I possess not only the theoretical knowledge but also the hands-on skillset to assess, identify, and help remediate complex security vulnerabilities.
+        </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="card">
+        <h2>Portfolio</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 p-3">
+              <h5>Web Application and Active Directory Penetration Testing</h5>
+              <p>Conducting a full vulnerability assesment,enumeration and possible fixes to vulnerabilities to safeguard Web applications as well as Active Directory</p>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section"  style="background-color: rgba(0, 0, 0, 0);">
-        <img src="images/profile_image.jpeg" alt="Aravinda A Kumar" class="profile-img"> <!-- Add your profile image here -->
-        <div class="hero-text">
-            <h1 class="fade-in">Welcome to My Portfolio!</h1>
-            <p class="fade-in">This is Aravinda A Kumar</p>
-            <a href="#portfolio" style="text-decoration: none" class="btn btn-primary btn-lg fade-in">View My Work</a>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section id="about" class="py-5" style="position:relative; background-color: rgba(0, 0, 0, 0);">
-        <div class="container">
-            <h2 class="fade-in">About Me</h2>
-            <p class="fade-in">I am a certified ethical hacker master with expertise in identifying and mitigating security vulnerabilities. My passion for cybersecurity drives me to constantly stay ahead of emerging threats by honing my skills in penetration testing, network security, and ethical hacking methodologies.</p>
-            <p class="fade-in">With a strong background in both offensive and defensive security, I help organizations safeguard their digital assets by providing comprehensive security assessments.</p>
-        </div>
-    </section>
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5" style="position:relative;background-color: rgba(0, 0, 0, 0);">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100" style="background-color: #ffffff;">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1: Web Application Penetration Testing</h5>
-                            <p class="card-text">Conducted a full security assessment of a web application on portswigger labs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100" style="background-color: #ffffff;">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2:Penetration Testing</h5>
-                            <p class="card-text">Solved CEH engage platform pentesting (CTF)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100" style="background-color: #ffffff;">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3: Built a Newsportal</h5>
-                            <p class="card-text">Full stack web application using html,css,javascript</p><br>
-                            <p class="card-footer"><a href="https://github.com/passioncoder5/newsportal" style="text-decoration: none" target="blank" class="btn btn-primary d-block mx-auto">View Project</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100" style="background-color: #ffffff;">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 4: Built weather bot using python tkinter</h5>
-                            <p class="card-text">A Python tkinter project displaying weather updates using API</p><br>
-                            <p class="card-footer"><a href="https://github.com/passioncoder5/weather_bot" style="text-decoration: none" target="blank" class="btn btn-primary d-block mx-auto">View Project</a></p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 p-3">
+              <h5>Solved Capture the flag machines</h5>
+              <p>On hackthebox and proving grounds practice to gain root or Administrative shell in an risk free environment</p>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 p-3">
+              <h5>Project 3: Built a Newsportal</h5>
+              <p>Full stack web application using HTML, CSS, and JavaScript.</p>
+              <a href="https://github.com/passioncoder5/newsportal" class="btn" target="_blank">View Project</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 p-3">
+              <h5>Project 4: Weather Bot</h5>
+              <p>Python Tkinter project displaying weather updates using an API.</p>
+              <a href="https://github.com/passioncoder5/weather_bot" class="btn" target="_blank">View Project</a>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- Skills Section -->
-    <section id="skills" class="py-5" style="position:relative;background-color: rgba(0, 0, 0, 0);">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python,Bash Scripting,Java,Networking concepts</li>
-                <li>Penetration Testing</li>
-                <li>Vulnerability Assessment</li>
-                <li>Network Security</li>
-                <li>Web Application Penetration Testing</li>
-            </ul>
-        </div>
-    </section>
-    <!-- Certifications Section -->
-    <section id="certifications" class="py-5" style="position:relative;background-color: rgba(0, 0, 0, 0);">
-        <div class="container">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Certified Ethical Hacker (CEH) v12</li>
-                <li>Certified Ethical Hacker (CEH) v12 practical</li>
-                <li>Google Cybersecurity Certificate</li>
-                <li>Enhancing soft skill and personality(NPTEL)</li>
-            </ul>
-        </div>
-    </section>
-    <!-- Resume/CV Section -->
-    <section id="resume" class="py-5" style="position:relative;background-color: rgba(0, 0, 0, 0);">
-        <div class="container">
-            <h2>Resume</h2>
-            <p>Resume: <a href="https://drive.google.com/drive/folders/1op2RdvpDlh1Iq12-xehIhk_veVaB-ePa?usp=drive_link" style="text-decoration: none" target="blank" style="color:teal;">Aravinda-Resume-Drive-Link</a></p>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="py-5" style="position:relative;background-color: rgba(0, 0, 0, 0);">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: aru510704@gmail.com</p> 
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/aravinda-a-kumar-a82b96276" style="text-decoration: none" target="blank" style="color:teal;">Aravinda-LinkedIn-Profile</a></p><!-- Add your email address -->
-         <!-- Add your phone number -->
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p class="footer-text">© 2024 Aravinda A Kumar. All rights reserved.</p>
-        </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, Bash Scripting, Java, Networking concepts</li>
+            <li>Penetration Testing</li>
+            <li>Vulnerability Assessment</li>
+            <li>Network Security</li>
+            <li>Web Application Security Testing</li>
+            <li>Information Gathering and Enumeration</li>
+            <li>Manual Vulnerability Discovery</li>
+            <li>Secure Authentication and Credential Management</li>
+            <li>Access Control and Privilege Management</li>
+            <li>Internal Network Access and Pivoting Techniques</li>
+            <li>Active Directory Security Concepts</li>
+            <li>Post-Exploitation Techniques</li>
+            <li>Session Persistence and Evasion Strategies</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Smooth scroll logic
-        const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
-        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <div class="card">
+        <h2>Certifications</h2>
+        <ul>
+          <li>OSCP+ and OSCP (Offensive Security Certified Professional)</li>
+          <li>Certified Ethical Hacker (CEH) v12</li>
+          <li>Certified Ethical Hacker (CEH) v12 Practical</li>
+          <li>Google Cybersecurity Certificate</li>
+          <li>Enhancing Soft Skills and Personality (NPTEL)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        // Collapse the navbar when a link is clicked and smooth scroll
-        navbarLinks.forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault(); // Prevent the default anchor click behavior
-                const navbarHeight = 500;
-                const targetId = link.getAttribute('href'); // Get the target section ID
-                const targetSection = document.querySelector(targetId); // Select the target section
-                
-                // Scroll to the target section, adjusting for the navbar height
-                window.scrollTo({
-                    top: targetSection.offsetTop - navbarHeight, // Adjusting for the navbar height
-                    behavior: 'smooth' // Smooth scroll
-                });
+  <!-- Resume Section -->
+  <section id="resume">
+    <div class="container">
+      <div class="card">
+        <h2>Resume</h2>
+        <p class="icon-link">
+          <img src="images/drive-icon.png" alt="Drive Icon" />
+          <a href="https://drive.google.com/drive/folders/1op2RdvpDlh1Iq12-xehIhk_veVaB-ePa?usp=drive_link" target="_blank">View My Resume on Google Drive</a>
+        </p>
+      </div>
+    </div>
+  </section>
 
-                // Collapse the navbar if it is open
-                const navbarNav = document.getElementById('navbarNav');
-                const navbarToggle = document.querySelector('.navbar-toggler');
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="card">
+        <h2>Contact Me</h2>
+        <p class="icon-link">
+          <img src="images/gmail-icon.png" alt="Gmail Icon" />
+          <a href="mailto:aru510704@gmail.com">aru510704@gmail.com</a>
+        </p>
+        <p class="icon-link">
+          <img src="images/linkedin-icon.png" alt="LinkedIn Icon" />
+          <a href="https://www.linkedin.com/in/aravinda-a-kumar-a82b96276" target="_blank">LinkedIn Profile</a>
+        </p>
+      </div>
+    </div>
+  </section>
 
-                if (navbarNav.classList.contains('show')) {
-                    navbarToggle.click(); // Trigger the click event to collapse
-                }
-            });
-        });
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p>© 2024 Aravinda A Kumar. All rights reserved.</p>
+  </footer>
 
-        // Fade-in effect for sections
-        const fadeInSections = document.querySelectorAll('.fade-in');
-        const options = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, options);
-
-        fadeInSections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
-    <!-- Add this script before the closing </body> tag -->
-<script>
-    const canvas = document.getElementById('starBackground');
-    const ctx = canvas.getContext('2d');
-    
-    // Set canvas size
-    function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-    
-    // Initial resize
-    resizeCanvas();
-    
-    // Resize canvas when window is resized
-    window.addEventListener('resize', resizeCanvas);
-    
-    // Star class
-    class Star {
-        constructor() {
-            this.reset();
-        }
-    
-        reset() {
-            this.x = Math.random() * canvas.width;
-            this.y = Math.random() * canvas.height;
-            this.z = Math.random() * 1500; // Star depth
-            this.size = 1;
-            this.speed = Math.random() * 3 + 1;
-            this.brightness = Math.random();
-        }
-    
-        update() {
-            this.z -= this.speed;
-            
-            if (this.z <= 0) {
-                this.reset();
-            }
-    
-            // Calculate star position and size based on perspective
-            this.screenX = (this.x - canvas.width/2) * (600/this.z) + canvas.width/2;
-            this.screenY = (this.y - canvas.height/2) * (600/this.z) + canvas.height/2;
-            this.screenSize = Math.max(0.5, (600/this.z) * this.size);
-        }
-    
-        draw() {
-            const alpha = Math.min(1, this.brightness * (1000/this.z));
-            ctx.beginPath();
-            ctx.arc(this.screenX, this.screenY, this.screenSize, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
-            ctx.fill();
-    
-            // Add glow effect for brighter stars
-            if (this.screenSize > 1) {
-                ctx.beginPath();
-                ctx.arc(this.screenX, this.screenY, this.screenSize * 2, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(255, 255, 255, ${alpha * 0.1})`;
-                ctx.fill();
-            }
-        }
-    }
-    
-    // Create stars
-    const stars = Array(500).fill().map(() => new Star());
-    
-    // Big static stars in the background
-    const bigStars = Array(50).fill().map(() => ({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        size: Math.random() * 2 + 1,
-        twinkleSpeed: Math.random() * 0.1,
-        brightness: Math.random()
-    }));
-    
-    // Animation loop
-    function animate() {
-        // Clear canvas
-        ctx.fillStyle = 'rgba(15, 12, 41, 0.2)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-    
-        // Draw big background stars
-        bigStars.forEach(star => {
-            star.brightness += star.twinkleSpeed;
-            if (star.brightness > 1 || star.brightness < 0) star.twinkleSpeed *= -1;
-            
-            ctx.beginPath();
-            ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(255, 255, 255, ${0.5 + star.brightness * 0.5})`;
-            ctx.fill();
-    
-            // Star glow
-            ctx.beginPath();
-            ctx.arc(star.x, star.y, star.size * 3, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(255, 255, 255, ${0.1 + star.brightness * 0.1})`;
-            ctx.fill();
-        });
-    
-        // Update and draw moving stars
-        stars.forEach(star => {
-            star.update();
-            star.draw();
-        });
-    
-        // Occasional shooting star
-        if (Math.random() < 0.01) {
-            createShootingStar();
-        }
-    
-        requestAnimationFrame(animate);
-    }
-    
-    // Shooting star effect
-    function createShootingStar() {
-        const shootingStar = {
-            x: Math.random() * canvas.width,
-            y: 0,
-            length: Math.random() * 80 + 100,
-            speed: Math.random() * 15 + 10,
-            angle: Math.PI / 4
-        };
-    
-        function drawShootingStar() {
-            ctx.beginPath();
-            ctx.moveTo(shootingStar.x, shootingStar.y);
-            const endX = shootingStar.x + Math.cos(shootingStar.angle) * shootingStar.length;
-            const endY = shootingStar.y + Math.sin(shootingStar.angle) * shootingStar.length;
-            ctx.lineTo(endX, endY);
-    
-            const gradient = ctx.createLinearGradient(
-                shootingStar.x, shootingStar.y,
-                endX, endY
-            );
-            gradient.addColorStop(0, 'rgba(255, 255, 255, 0.8)');
-            gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
-    
-            ctx.strokeStyle = gradient;
-            ctx.lineWidth = 2;
-            ctx.stroke();
-    
-            shootingStar.x += Math.cos(shootingStar.angle) * shootingStar.speed;
-            shootingStar.y += Math.sin(shootingStar.angle) * shootingStar.speed;
-    
-            if (shootingStar.y < canvas.height && shootingStar.x < canvas.width) {
-                requestAnimationFrame(drawShootingStar);
-            }
-        }
-    
-        drawShootingStar();
-    }
-    
-    // Mouse interaction
-    let mouseX = 0;
-    let mouseY = 0;
-    
-    canvas.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-    
-        // Create small particles around mouse
-        if (Math.random() < 0.1) {
-            const particle = new Star();
-            particle.x = mouseX;
-            particle.y = mouseY;
-            particle.z = 1500;
-            stars.push(particle);
-            if (stars.length > 600) stars.shift();
-        }
-    });
-    
-    // Start animation
-    animate();
-    
-    // Optional: Add parallax effect
-    document.addEventListener('mousemove', (e) => {
-        const moveX = (e.clientX - window.innerWidth/2) * 0.01;
-        const moveY = (e.clientY - window.innerHeight/2) * 0.01;
-        
-        bigStars.forEach(star => {
-            star.x += moveX * (star.size/2);
-            star.y += moveY * (star.size/2);
-            
-            // Keep stars within bounds
-            if (star.x < 0) star.x = canvas.width;
-            if (star.x > canvas.width) star.x = 0;
-            if (star.y < 0) star.y = canvas.height;
-            if (star.y > canvas.height) star.y = 0;
-        });
-    });
-    </script>
-    
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
