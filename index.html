@@ -21,7 +21,7 @@
       color: #ffffff !important;
     }
 
-    #resume a, #contact a {
+    #resume a, #contact a , #youtube a {
       color: #000000 !important;
     }
 
@@ -56,6 +56,15 @@
     .card a.btn:hover {
       background-color: #333333 !important;
       color: #ffffff !important;
+    }
+    #btnleft, #btnright {
+      width: 48%; /* optional, gives nice spacing */
+    }
+
+    .btn-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px; /* space between buttons */
     }
 
     body {
@@ -173,6 +182,23 @@
               <a href="https://github.com/passioncoder5/weather_bot" class="btn" target="_blank">View Project</a>
             </div>
           </div>
+          <div class="col-md-6">
+            <div class="card h-100 p-3">
+              <h5>Project 5: Network Pentesting</h5>
+              <p style="text-align: left;">Network hacking WEP and WPA/WPA2 readme.md file created and youtube playlist created</p>
+              <div class="btn-row">
+                <a href="https://github.com/passioncoder5/Network-Pentesting" id="btnleft" class="btn" target="_blank">View Project</a>
+                <a href="https://youtube.com/playlist?list=PLy1QSYNrTQOShZfhvKI74gEJ_VMQPMqRc&si=D4Iz_CdOWGpVK2HW"  id="btnright" class="btn" target="_blank">View Youtube Playlist</a>
+              </div>  
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 p-3">
+              <h5>Project 6: Bug Bounty Hunting Methodology</h5>
+              <p style="text-align: left;">Bug bounty hunting reconnaissance and vulnerability scanning automation readme.md file created</p>
+              <a href="https://github.com/passioncoder5/Bug-Bounty-Hunting-Methodology" class="btn" target="_blank">View Project</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -249,6 +275,21 @@
       </div>
     </div>
   </section>
+<!-- YouTube Section -->
+  <section id="youtube">
+    <div class="container">
+      <div class="card">
+        <h2>Youtube</h2>
+        <p class="icon-link">
+          <img src="images/youtube-icon.png" alt="YouTube Icon" />
+          <a href="https://youtube.com/playlist?list=PLy1QSYNrTQOShZfhvKI74gEJ_VMQPMqRc&si=D4Iz_CdOWGpVK2HW" target="_blank">
+          My YouTube Playlist
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="text-center py-4">
